@@ -9,7 +9,7 @@ const cheerio = require("cheerio");
 var db = require("../models");
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/MarketNews";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://192.168.99.100/MarketNews";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 module.exports = function (app) {
